@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BF627DD8152FAC78DBF25F7 /* Pods_Smile_Expo_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77348645460B3E8F4125107D /* Pods_Smile_Expo_Events.framework */; };
+		45142B0C2025A4F10013B560 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B0B2025A4F10013B560 /* Api.swift */; };
+		45142B0F2025A5770013B560 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B0E2025A5770013B560 /* Event.swift */; };
+		45142B112025AA640013B560 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B102025AA640013B560 /* Mapper.swift */; };
 		45D7F76320258D32005AE528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F76220258D32005AE528 /* AppDelegate.swift */; };
 		45D7F76520258D32005AE528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F76420258D32005AE528 /* ViewController.swift */; };
 		45D7F76820258D32005AE528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76620258D32005AE528 /* Main.storyboard */; };
@@ -14,6 +18,8 @@
 		45D7F76D20258D32005AE528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76B20258D32005AE528 /* LaunchScreen.storyboard */; };
 		45D7F77820258D32005AE528 /* Smile_Expo_EventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F77720258D32005AE528 /* Smile_Expo_EventsTests.swift */; };
 		45D7F78320258D32005AE528 /* Smile_Expo_EventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F78220258D32005AE528 /* Smile_Expo_EventsUITests.swift */; };
+		B13A588EB2F25A9E3E505DB8 /* Pods_Smile_Expo_EventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E16A95909F12219F7B43A1 /* Pods_Smile_Expo_EventsUITests.framework */; };
+		DA60B52748170CB6C31C6A8A /* Pods_Smile_Expo_EventsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB64FF866113EE9C59F1C25 /* Pods_Smile_Expo_EventsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0861A59B9C8FD70ABB98BB10 /* Pods-Smile Expo Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo Events.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo Events/Pods-Smile Expo Events.release.xcconfig"; sourceTree = "<group>"; };
+		13E16A95909F12219F7B43A1 /* Pods_Smile_Expo_EventsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smile_Expo_EventsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45142B0B2025A4F10013B560 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		45142B0E2025A5770013B560 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		45142B102025AA640013B560 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		45D7F75F20258D32005AE528 /* Smile Expo Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smile Expo Events.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D7F76220258D32005AE528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45D7F76420258D32005AE528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,13 @@
 		45D7F77E20258D32005AE528 /* Smile Expo EventsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smile Expo EventsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D7F78220258D32005AE528 /* Smile_Expo_EventsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smile_Expo_EventsUITests.swift; sourceTree = "<group>"; };
 		45D7F78420258D32005AE528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52AC1635D13D8ACFF77D6303 /* Pods-Smile Expo EventsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo EventsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo EventsTests/Pods-Smile Expo EventsTests.release.xcconfig"; sourceTree = "<group>"; };
+		578CACBF1FD6D57861CA360E /* Pods-Smile Expo Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo Events/Pods-Smile Expo Events.debug.xcconfig"; sourceTree = "<group>"; };
+		5BB64FF866113EE9C59F1C25 /* Pods_Smile_Expo_EventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smile_Expo_EventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77348645460B3E8F4125107D /* Pods_Smile_Expo_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smile_Expo_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92853F315A977E721FBEA33F /* Pods-Smile Expo EventsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo EventsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo EventsTests/Pods-Smile Expo EventsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFDB2AF696D81C1E941C1D3F /* Pods-Smile Expo EventsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo EventsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo EventsUITests/Pods-Smile Expo EventsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E409B87B1264A7D44946B71B /* Pods-Smile Expo EventsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo EventsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo EventsUITests/Pods-Smile Expo EventsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF627DD8152FAC78DBF25F7 /* Pods_Smile_Expo_Events.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA60B52748170CB6C31C6A8A /* Pods_Smile_Expo_EventsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +88,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13A588EB2F25A9E3E505DB8 /* Pods_Smile_Expo_EventsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EDC8BAB8B59CAAE7EF99C2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				578CACBF1FD6D57861CA360E /* Pods-Smile Expo Events.debug.xcconfig */,
+				0861A59B9C8FD70ABB98BB10 /* Pods-Smile Expo Events.release.xcconfig */,
+				92853F315A977E721FBEA33F /* Pods-Smile Expo EventsTests.debug.xcconfig */,
+				52AC1635D13D8ACFF77D6303 /* Pods-Smile Expo EventsTests.release.xcconfig */,
+				E409B87B1264A7D44946B71B /* Pods-Smile Expo EventsUITests.debug.xcconfig */,
+				DFDB2AF696D81C1E941C1D3F /* Pods-Smile Expo EventsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		45142B0A2025A4E60013B560 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				45142B0B2025A4F10013B560 /* Api.swift */,
+				45142B102025AA640013B560 /* Mapper.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		45142B0D2025A5620013B560 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				45142B0E2025A5770013B560 /* Event.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		45D7F75620258D32005AE528 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +132,8 @@
 				45D7F77620258D32005AE528 /* Smile Expo EventsTests */,
 				45D7F78120258D32005AE528 /* Smile Expo EventsUITests */,
 				45D7F76020258D32005AE528 /* Products */,
+				3EDC8BAB8B59CAAE7EF99C2A /* Pods */,
+				B741931CFEFA7570A42F53C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +150,8 @@
 		45D7F76120258D32005AE528 /* Smile Expo Events */ = {
 			isa = PBXGroup;
 			children = (
+				45142B0D2025A5620013B560 /* model */,
+				45142B0A2025A4E60013B560 /* api */,
 				45D7F76220258D32005AE528 /* AppDelegate.swift */,
 				45D7F76420258D32005AE528 /* ViewController.swift */,
 				45D7F76620258D32005AE528 /* Main.storyboard */,
@@ -125,6 +180,16 @@
 			path = "Smile Expo EventsUITests";
 			sourceTree = "<group>";
 		};
+		B741931CFEFA7570A42F53C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77348645460B3E8F4125107D /* Pods_Smile_Expo_Events.framework */,
+				5BB64FF866113EE9C59F1C25 /* Pods_Smile_Expo_EventsTests.framework */,
+				13E16A95909F12219F7B43A1 /* Pods_Smile_Expo_EventsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45D7F78720258D32005AE528 /* Build configuration list for PBXNativeTarget "Smile Expo Events" */;
 			buildPhases = (
+				F886B4CF1CF90A10C92976EF /* [CP] Check Pods Manifest.lock */,
 				45D7F75B20258D32005AE528 /* Sources */,
 				45D7F75C20258D32005AE528 /* Frameworks */,
 				45D7F75D20258D32005AE528 /* Resources */,
+				8D183F7C089066428665937D /* [CP] Embed Pods Frameworks */,
+				38E3A8560F2B58CE3EC96A3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45D7F78A20258D32005AE528 /* Build configuration list for PBXNativeTarget "Smile Expo EventsTests" */;
 			buildPhases = (
+				2A54C6A6733DB0E791DF799C /* [CP] Check Pods Manifest.lock */,
 				45D7F76F20258D32005AE528 /* Sources */,
 				45D7F77020258D32005AE528 /* Frameworks */,
 				45D7F77120258D32005AE528 /* Resources */,
+				B0E732CABD9CCDA7BBE6EFE2 /* [CP] Embed Pods Frameworks */,
+				C907957BD0FFF27D67C69AE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +238,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45D7F78D20258D32005AE528 /* Build configuration list for PBXNativeTarget "Smile Expo EventsUITests" */;
 			buildPhases = (
+				800BFC918D30567B15130B95 /* [CP] Check Pods Manifest.lock */,
 				45D7F77A20258D32005AE528 /* Sources */,
 				45D7F77B20258D32005AE528 /* Frameworks */,
 				45D7F77C20258D32005AE528 /* Resources */,
+				1B271ED1CC296A03E97BF730 /* [CP] Embed Pods Frameworks */,
+				E2199C9845DAAE05C9C18810 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +328,174 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B271ED1CC296A03E97BF730 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smile Expo EventsUITests/Pods-Smile Expo EventsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A54C6A6733DB0E791DF799C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smile Expo EventsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38E3A8560F2B58CE3EC96A3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smile Expo Events/Pods-Smile Expo Events-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800BFC918D30567B15130B95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smile Expo EventsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D183F7C089066428665937D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smile Expo Events/Pods-Smile Expo Events-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smile Expo Events/Pods-Smile Expo Events-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E732CABD9CCDA7BBE6EFE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smile Expo EventsTests/Pods-Smile Expo EventsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C907957BD0FFF27D67C69AE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smile Expo EventsTests/Pods-Smile Expo EventsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2199C9845DAAE05C9C18810 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smile Expo EventsUITests/Pods-Smile Expo EventsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F886B4CF1CF90A10C92976EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smile Expo Events-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		45D7F75B20258D32005AE528 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45142B0F2025A5770013B560 /* Event.swift in Sources */,
+				45142B0C2025A4F10013B560 /* Api.swift in Sources */,
 				45D7F76520258D32005AE528 /* ViewController.swift in Sources */,
 				45D7F76320258D32005AE528 /* AppDelegate.swift in Sources */,
+				45142B112025AA640013B560 /* Mapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,12 +659,14 @@
 		};
 		45D7F78820258D32005AE528 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 578CACBF1FD6D57861CA360E /* Pods-Smile Expo Events.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = "Smile Expo Events/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhukovme.Smile-Expo-Events";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhukovme.smile-expo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,12 +675,14 @@
 		};
 		45D7F78920258D32005AE528 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0861A59B9C8FD70ABB98BB10 /* Pods-Smile Expo Events.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = "Smile Expo Events/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhukovme.Smile-Expo-Events";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhukovme.smile-expo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,6 +691,7 @@
 		};
 		45D7F78B20258D32005AE528 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92853F315A977E721FBEA33F /* Pods-Smile Expo EventsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +708,7 @@
 		};
 		45D7F78C20258D32005AE528 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52AC1635D13D8ACFF77D6303 /* Pods-Smile Expo EventsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +725,7 @@
 		};
 		45D7F78E20258D32005AE528 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E409B87B1264A7D44946B71B /* Pods-Smile Expo EventsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +741,7 @@
 		};
 		45D7F78F20258D32005AE528 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDB2AF696D81C1E941C1D3F /* Pods-Smile Expo EventsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
