@@ -3,10 +3,11 @@ platform :ios, '9.0'
 target 'Smile Expo Events' do
   use_frameworks!
 
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'ObjectMapper'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
   pod 'RxAlamofire'
+  pod 'ObjectMapper', '~> 3.1'
+  pod 'Kingfisher', '~> 4.0'
 
   target 'Smile Expo EventsTests' do
     inherit! :search_paths
