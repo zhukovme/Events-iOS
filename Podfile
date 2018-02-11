@@ -1,6 +1,6 @@
 platform :ios, '9.0'
 
-target 'Smile Expo Events' do
+target 'Events' do
   use_frameworks!
 
   pod 'RxSwift', '~> 4.0'
@@ -10,11 +10,11 @@ target 'Smile Expo Events' do
   pod 'Kingfisher', '~> 4.0'
   pod 'DITranquillity'
 
-  target 'Smile Expo EventsTests' do
+  target 'EventsTests' do
     inherit! :search_paths
   end
 
-  target 'Smile Expo EventsUITests' do
+  target 'EventsUITests' do
     inherit! :search_paths
   end
 
