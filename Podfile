@@ -8,6 +8,7 @@ target 'Smile Expo Events' do
   pod 'RxAlamofire'
   pod 'ObjectMapper', '~> 3.1'
   pod 'Kingfisher', '~> 4.0'
+  pod 'DITranquillity'
 
   target 'Smile Expo EventsTests' do
     inherit! :search_paths

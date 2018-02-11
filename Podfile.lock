@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - DITranquillity (3.1.3)
   - Kingfisher (4.6.1)
   - ObjectMapper (3.1.0)
   - RxAlamofire (4.0.0):
@@ -12,6 +13,7 @@ PODS:
   - RxSwift (4.1.1)
 
 DEPENDENCIES:
+  - DITranquillity
   - Kingfisher (~> 4.0)
   - ObjectMapper (~> 3.1)
   - RxAlamofire
@@ -20,12 +22,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DITranquillity: d600f3eef8a14a559fb1eea9f7611c4325cc4418
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
   RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
   RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
 
-PODFILE CHECKSUM: 60ebbd722258c3465e668ca0aa275cb434420f63
+PODFILE CHECKSUM: e73452a96a74c4f74e25d98464d67ac0e052c690
 
 COCOAPODS: 1.4.0

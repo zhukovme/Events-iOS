@@ -10,7 +10,6 @@ import RxSwift
 import ObjectMapper
 
 extension ObservableType {
-
     public func mapObject<T: Mappable>(type: T.Type) -> Observable<T> {
         return flatMap { data -> Observable<T> in
             let (_, json) = data as! (HTTPURLResponse, Any)

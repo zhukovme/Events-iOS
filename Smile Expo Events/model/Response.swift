@@ -9,7 +9,6 @@
 import ObjectMapper
 
 class Response<T: Mappable>: Mappable {
-
     var status: String?
     var resource: [T]?
 

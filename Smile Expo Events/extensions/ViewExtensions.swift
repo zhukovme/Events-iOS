@@ -9,7 +9,6 @@
 import Kingfisher
 
 extension UIImageView {
-
     func loadImage(url: String?) {
         kf.setImage(with: URL(string: url ?? ""),
                     placeholder: #imageLiteral(resourceName:"placeholder"),

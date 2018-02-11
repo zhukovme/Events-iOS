@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventListCell: UITableViewCell {
+class EventListCell: ListCell {
     @IBOutlet weak var ivImage: UIImageView! {
         didSet {
             ivImage.roundCorners()
@@ -24,4 +24,29 @@ class EventListCell: UITableViewCell {
 
     @IBOutlet weak var viewTime: UIView!
     @IBOutlet weak var labelTime: UILabel!
+
+    override func configure(for viewObject: ViewObject) {
+        if let event = viewObject as? Event {
+            labelTitle.text = event.title ?? ""
+            ivImage.loadImage(url: event.imageUrl)
+            showLocation(event.location?.fromHtml ?? "")
+            showDate(event.date ?? "")
+            showTime(event.time ?? "")
+        }
+    }
+
+    private func showLocation(_ location: String) {
+        viewLocation.isHidden = location.isEmpty
+        labelLocation.text = location
+    }
+
+    private func showDate(_ date: String) {
+        viewDate.isHidden = date.isEmpty
+        labelDate.text = date
+    }
+
+    private func showTime(_ time: String) {
+        viewTime.isHidden = time.isEmpty
+        labelTime.text = time
+    }
 }

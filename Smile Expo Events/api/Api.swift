@@ -10,12 +10,10 @@ import RxAlamofire
 import RxSwift
 
 class Api {
+    private let BASE_URL = "https://apia.exp0.in/api.php/smileExpo/"
 
-    private static let BASE_URL = "https://apia.exp0.in/api.php/smileExpo/"
-
-    static func events(day: String?, month: String?, year: String?, limit: String?, category: String?,
-                       lang: String?) -> Observable<Response<Event>> {
-        return requestJSON(.get, BASE_URL + "eventsFeed")
+    func events(params: [String: Any]?) -> Observable<Response<Event>> {
+        return requestJSON(.get, BASE_URL + "eventsFeed", parameters: params)
                 .mapObject(type: Response<Event>.self)
     }
 }

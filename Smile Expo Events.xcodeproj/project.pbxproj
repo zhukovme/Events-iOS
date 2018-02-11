@@ -11,12 +11,17 @@
 		45142B0C2025A4F10013B560 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B0B2025A4F10013B560 /* Api.swift */; };
 		45142B0F2025A5770013B560 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B0E2025A5770013B560 /* Event.swift */; };
 		45142B1B2025D69F0013B560 /* JsonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B1A2025D69F0013B560 /* JsonExtensions.swift */; };
-		45142B1E2025DB1A0013B560 /* EventListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B1D2025DB1A0013B560 /* EventListTableViewController.swift */; };
+		45142B1E2025DB1A0013B560 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B1D2025DB1A0013B560 /* EventListViewController.swift */; };
 		45142B202025DE150013B560 /* RxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B1F2025DE150013B560 /* RxExtensions.swift */; };
 		45142B262025FDC20013B560 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B252025FDC20013B560 /* Response.swift */; };
 		45142B2820275A8C0013B560 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B2720275A8C0013B560 /* ViewExtensions.swift */; };
 		45142B2A202871D30013B560 /* EventListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B29202871D30013B560 /* EventListCell.swift */; };
 		45142B2C20287DAC0013B560 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B2B20287DAC0013B560 /* StringExtensions.swift */; };
+		45142B352028E8560013B560 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B342028E8560013B560 /* AppModule.swift */; };
+		45142B372028EB640013B560 /* EventListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B362028EB640013B560 /* EventListModule.swift */; };
+		45142B392028EF980013B560 /* EventListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B382028EF980013B560 /* EventListPresenter.swift */; };
+		45142B3B2028EFBE0013B560 /* EventListMvpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B3A2028EFBE0013B560 /* EventListMvpView.swift */; };
+		45142B3E20304BFF0013B560 /* Arch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B3D20304BFF0013B560 /* Arch.swift */; };
 		45D7F76320258D32005AE528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F76220258D32005AE528 /* AppDelegate.swift */; };
 		45D7F76820258D32005AE528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76620258D32005AE528 /* Main.storyboard */; };
 		45D7F76A20258D32005AE528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76920258D32005AE528 /* Assets.xcassets */; };
@@ -52,12 +57,17 @@
 		45142B0B2025A4F10013B560 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		45142B0E2025A5770013B560 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		45142B1A2025D69F0013B560 /* JsonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonExtensions.swift; sourceTree = "<group>"; };
-		45142B1D2025DB1A0013B560 /* EventListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListTableViewController.swift; sourceTree = "<group>"; };
+		45142B1D2025DB1A0013B560 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		45142B1F2025DE150013B560 /* RxExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtensions.swift; sourceTree = "<group>"; };
 		45142B252025FDC20013B560 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		45142B2720275A8C0013B560 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		45142B29202871D30013B560 /* EventListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCell.swift; sourceTree = "<group>"; };
 		45142B2B20287DAC0013B560 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		45142B342028E8560013B560 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		45142B362028EB640013B560 /* EventListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListModule.swift; sourceTree = "<group>"; };
+		45142B382028EF980013B560 /* EventListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListPresenter.swift; sourceTree = "<group>"; };
+		45142B3A2028EFBE0013B560 /* EventListMvpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListMvpView.swift; sourceTree = "<group>"; };
+		45142B3D20304BFF0013B560 /* Arch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arch.swift; sourceTree = "<group>"; };
 		45D7F75F20258D32005AE528 /* Smile Expo Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smile Expo Events.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D7F76220258D32005AE528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45D7F76720258D32005AE528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,7 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				45142B29202871D30013B560 /* EventListCell.swift */,
-				45142B1D2025DB1A0013B560 /* EventListTableViewController.swift */,
+				45142B1D2025DB1A0013B560 /* EventListViewController.swift */,
+				45142B362028EB640013B560 /* EventListModule.swift */,
+				45142B382028EF980013B560 /* EventListPresenter.swift */,
+				45142B3A2028EFBE0013B560 /* EventListMvpView.swift */,
 			);
 			path = event_list;
 			sourceTree = "<group>";
@@ -151,6 +164,7 @@
 		45142B132025C3390013B560 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				45142B3C20304BEE0013B560 /* base */,
 				45142B122025C3000013B560 /* event_list */,
 			);
 			path = ui;
@@ -165,6 +179,14 @@
 				45142B2B20287DAC0013B560 /* StringExtensions.swift */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		45142B3C20304BEE0013B560 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				45142B3D20304BFF0013B560 /* Arch.swift */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 		45D7F75620258D32005AE528 = {
@@ -196,8 +218,9 @@
 				45142B0D2025A5620013B560 /* model */,
 				45142B132025C3390013B560 /* ui */,
 				45142B1C2025D76B0013B560 /* extensions */,
-				CC96822CB7FE4AB800CA852F /* errors */,
 				CC9688425273E50714305755 /* Logger.swift */,
+				CC968D7CE368B49B736A8F0F /* Errors.swift */,
+				45142B342028E8560013B560 /* AppModule.swift */,
 				45D7F76220258D32005AE528 /* AppDelegate.swift */,
 				45D7F76620258D32005AE528 /* Main.storyboard */,
 				45D7F76B20258D32005AE528 /* LaunchScreen.storyboard */,
@@ -233,14 +256,6 @@
 				13E16A95909F12219F7B43A1 /* Pods_Smile_Expo_EventsUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CC96822CB7FE4AB800CA852F /* errors */ = {
-			isa = PBXGroup;
-			children = (
-				CC968D7CE368B49B736A8F0F /* Errors.swift */,
-			);
-			path = errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,6 +471,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Smile Expo Events/Pods-Smile Expo Events-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DITranquillity/DITranquillity.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
@@ -465,6 +481,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DITranquillity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
@@ -548,14 +565,19 @@
 			files = (
 				45142B2C20287DAC0013B560 /* StringExtensions.swift in Sources */,
 				45142B262025FDC20013B560 /* Response.swift in Sources */,
+				45142B392028EF980013B560 /* EventListPresenter.swift in Sources */,
+				45142B3E20304BFF0013B560 /* Arch.swift in Sources */,
 				45142B2A202871D30013B560 /* EventListCell.swift in Sources */,
+				45142B352028E8560013B560 /* AppModule.swift in Sources */,
 				45142B0F2025A5770013B560 /* Event.swift in Sources */,
-				45142B1E2025DB1A0013B560 /* EventListTableViewController.swift in Sources */,
+				45142B1E2025DB1A0013B560 /* EventListViewController.swift in Sources */,
 				45142B0C2025A4F10013B560 /* Api.swift in Sources */,
 				45142B2820275A8C0013B560 /* ViewExtensions.swift in Sources */,
 				45142B1B2025D69F0013B560 /* JsonExtensions.swift in Sources */,
 				45D7F76320258D32005AE528 /* AppDelegate.swift in Sources */,
+				45142B372028EB640013B560 /* EventListModule.swift in Sources */,
 				45142B202025DE150013B560 /* RxExtensions.swift in Sources */,
+				45142B3B2028EFBE0013B560 /* EventListMvpView.swift in Sources */,
 				CC968CA6366676835A8B19A3 /* Errors.swift in Sources */,
 				CC968D61966B56C4CE380C91 /* Logger.swift in Sources */,
 			);

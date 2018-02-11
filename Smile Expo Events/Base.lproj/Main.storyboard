@@ -29,7 +29,7 @@
         <!--Events-->
         <scene sceneID="KWF-tN-e4G">
             <objects>
-                <tableViewController id="Of4-4T-sIQ" customClass="EventListTableViewController" customModule="Smile_Expo_Events" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Of4-4T-sIQ" customClass="EventListViewController" customModule="Smile_Expo_Events" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="U68-iE-2Og">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,6 +175,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Events" id="Hzu-D9-Tmm"/>
+                    <connections>
+                        <outlet property="tableView" destination="U68-iE-2Og" id="UmI-wp-hgU"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9P-SN-Qs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

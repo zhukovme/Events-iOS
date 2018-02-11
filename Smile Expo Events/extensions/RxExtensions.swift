@@ -9,7 +9,6 @@
 import RxSwift
 
 extension ObservableType {
-
     public func applyMainSchedulers<E>() -> Observable<E> {
         return observeOn(MainScheduler.instance) as! Observable<E>
     }

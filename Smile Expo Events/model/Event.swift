@@ -9,7 +9,6 @@
 import ObjectMapper
 
 class Event: Mappable {
-
     var id: String?
     var title: String?
     var date: String?
