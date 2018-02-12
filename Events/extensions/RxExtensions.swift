@@ -9,7 +9,8 @@
 import RxSwift
 
 extension ObservableType {
-    public func applyMainSchedulers<E>() -> Observable<E> {
-        return observeOn(MainScheduler.instance) as! Observable<E>
+    public func applySchedulers() -> Observable<Self.E> {
+        return subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
+            .observeOn(MainScheduler.instance)
     }
 }

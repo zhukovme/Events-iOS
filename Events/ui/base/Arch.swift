@@ -11,6 +11,9 @@ import UIKit
 class Presenter: NSObject {
 }
 
+protocol MvpView {
+}
+
 typealias ViewObject = Any
 
 class ListCell: UITableViewCell {
@@ -44,6 +47,7 @@ class TablePresenter: Presenter, UITableViewDataSource {
     }
 
     func setTableItems(_ items: [ViewObject]) {
+        sections.removeAll()
         sections.insert(TableSection.init(title: nil, items: items), at: 0)
     }
 }

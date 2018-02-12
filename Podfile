@@ -9,6 +9,8 @@ target 'Events' do
   pod 'ObjectMapper', '~> 3.1'
   pod 'Kingfisher', '~> 4.0'
   pod 'DITranquillity'
+  pod 'SwiftMessages'
+  pod 'BEMCheckBox'
 
   target 'EventsTests' do
     inherit! :search_paths

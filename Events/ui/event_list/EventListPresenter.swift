@@ -9,18 +9,18 @@
 import RxSwift
 
 class EventListPresenter: TablePresenter {
-    private let api: Api
+    private let eventsInteractor: EventsInteractor
 
-    init(api: Api) {
-        self.api = api
+    init(eventsInteractor: EventsInteractor) {
+        self.eventsInteractor = eventsInteractor
     }
 
     private var view: EventListMvpView?
 
     private let disposeBag = DisposeBag()
-    private var eventList: [Event] = [] {
+    private var events: [Event] = [] {
         didSet {
-            setTableItems(eventList)
+            setTableItems(events)
             view?.reloadTable()
         }
     }
@@ -28,6 +28,13 @@ class EventListPresenter: TablePresenter {
     func viewDidLoad(view: EventListMvpView) {
         self.view = view
         cellIdentifier = "EventListCell"
+    }
+
+    func viewWillAppear() {
+        loadEventList()
+    }
+
+    func onRefresh() {
         loadEventList()
     }
 
@@ -35,16 +42,21 @@ class EventListPresenter: TablePresenter {
     }
 
     private func loadEventList() {
-        api.events(params: nil)
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { response in
-                guard let eventList = response.resource else {
-                    self.view?.showError(message: "Error")
-                    return
+        eventsInteractor.getEvents()
+            .applySchedulers()
+            .do(onSubscribe: {
+                self.view?.showRefreshing()
+            }, onDispose: {
+                self.view?.hideRefreshing()
+            })
+            .subscribe(onNext: { events in
+                if events.isEmpty {
+                    self.view?.showMessage(type: .info, message: "No events")
                 }
-                self.eventList = eventList
+                self.events = events
             }, onError: { error in
-                self.view?.showError(message: "Error")
+                Logger.log(error)
+                self.view?.showMessage(type: .error, message: "Server error")
             })
             .disposed(by: disposeBag)
     }

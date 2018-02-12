@@ -13,5 +13,6 @@ class EventListModule: DIPart {
         container.register1(EventListPresenter.init)
         container.register(EventListViewController.self)
             .injection { $0.presenter = $1 }
+            .injection { $0.messages = $1 }
     }
 }

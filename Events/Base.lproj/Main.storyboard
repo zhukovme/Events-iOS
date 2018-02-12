@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dhc-AI-4Ou">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WgD-TT-Po5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -8,24 +8,45 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="OBj-5s-TgQ">
+        <!--Tab Bar Controller-->
+        <scene sceneID="cQ3-cc-C3t">
             <objects>
-                <navigationController id="dhc-AI-4Ou" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K9Q-rw-e6b">
+                <tabBarController id="WgD-TT-Po5" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wTU-kY-Qdb"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H1l-bk-7Vb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="orange_default"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XpU-oc-c5k" kind="relationship" relationship="viewControllers" id="ZDn-rd-NbN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lG3-xN-5OD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3537" y="395"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="EPZ-Cl-Qf2">
+            <objects>
+                <navigationController id="XpU-oc-c5k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="calendar_multiple_orange" selectedImage="calendar_multiple_orange" id="BY1-6p-Hfb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IZk-Gr-18M">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Of4-4T-sIQ" kind="relationship" relationship="rootViewController" id="CGr-De-Kf3"/>
+                        <segue destination="Of4-4T-sIQ" kind="relationship" relationship="rootViewController" id="e2O-sn-HK4"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7TN-iV-yzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AKC-jd-rUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2937" y="72"/>
+            <point key="canvasLocation" x="-2756" y="-8"/>
         </scene>
         <!--Events-->
         <scene sceneID="KWF-tN-e4G">
@@ -178,6 +199,9 @@
                     <navigationItem key="navigationItem" title="Events" id="Hzu-D9-Tmm">
                         <barButtonItem key="rightBarButtonItem" image="filter_orange" id="W9o-1R-SaU">
                             <color key="tintColor" name="orange_default"/>
+                            <connections>
+                                <segue destination="jzp-Pe-HE6" kind="presentation" id="2LJ-cd-Wvl"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -186,10 +210,190 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9P-SN-Qs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2223.1999999999998" y="72.413793103448285"/>
+            <point key="canvasLocation" x="-2041" y="-8"/>
+        </scene>
+        <!--Events categories-->
+        <scene sceneID="pOK-jS-XqC">
+            <objects>
+                <viewController id="CsY-TQ-wmU" customClass="CategoryFilterViewController" customModule="Events" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xoa-6e-0Ou">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38Z-03-z6P" customClass="BEMCheckBox">
+                                <rect key="frame" x="16" y="80" width="24" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="FgE-vm-TEm"/>
+                                    <constraint firstAttribute="width" constant="24" id="oHu-E1-dVy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conferences" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ku-GP-Vrf">
+                                <rect key="frame" x="48" y="80" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7g-iO-DOa" customClass="BEMCheckBox">
+                                <rect key="frame" x="16" y="120" width="24" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="PMu-vX-frm"/>
+                                    <constraint firstAttribute="height" constant="24" id="S6l-G7-LBg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exhibitons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9e-oq-IpP">
+                                <rect key="frame" x="48" y="120" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAX-66-0hL" customClass="BEMCheckBox">
+                                <rect key="frame" x="16" y="160" width="24" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="BOj-YU-RGx"/>
+                                    <constraint firstAttribute="width" constant="24" id="dl8-Cr-FVY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Festivals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWo-Bl-ReG">
+                                <rect key="frame" x="48" y="160" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TVi-qp-fp6" customClass="BEMCheckBox">
+                                <rect key="frame" x="16" y="200" width="24" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="D30-uv-c2X"/>
+                                    <constraint firstAttribute="height" constant="24" id="bbo-ym-tKp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKX-DC-2ZG">
+                                <rect key="frame" x="48" y="200" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nAX-66-0hL" firstAttribute="top" secondItem="j7g-iO-DOa" secondAttribute="bottom" constant="16" id="0iu-3A-xcO"/>
+                            <constraint firstItem="0ku-GP-Vrf" firstAttribute="top" secondItem="38Z-03-z6P" secondAttribute="top" id="0tD-xK-Bfx"/>
+                            <constraint firstItem="0ku-GP-Vrf" firstAttribute="leading" secondItem="38Z-03-z6P" secondAttribute="trailing" constant="8" symbolic="YES" id="1Jc-SU-1Xh"/>
+                            <constraint firstItem="38Z-03-z6P" firstAttribute="leading" secondItem="Xoa-6e-0Ou" secondAttribute="leadingMargin" id="4Dd-ee-Cmt"/>
+                            <constraint firstItem="j7g-iO-DOa" firstAttribute="leading" secondItem="38Z-03-z6P" secondAttribute="leading" id="7Pc-Om-uYZ"/>
+                            <constraint firstItem="YWo-Bl-ReG" firstAttribute="bottom" secondItem="nAX-66-0hL" secondAttribute="bottom" id="Fy9-cD-yVs"/>
+                            <constraint firstItem="D9e-oq-IpP" firstAttribute="trailing" secondItem="YWo-Bl-ReG" secondAttribute="trailing" id="MNA-di-sJh"/>
+                            <constraint firstItem="38Z-03-z6P" firstAttribute="top" secondItem="2P4-Og-Kxr" secondAttribute="top" constant="16" id="MUA-vv-LZw"/>
+                            <constraint firstItem="NKX-DC-2ZG" firstAttribute="top" secondItem="TVi-qp-fp6" secondAttribute="top" id="Qmn-TH-N77"/>
+                            <constraint firstItem="D9e-oq-IpP" firstAttribute="top" secondItem="j7g-iO-DOa" secondAttribute="top" id="SWS-hv-h2B"/>
+                            <constraint firstItem="TVi-qp-fp6" firstAttribute="leading" secondItem="nAX-66-0hL" secondAttribute="leading" id="YVZ-cd-QMo"/>
+                            <constraint firstItem="0ku-GP-Vrf" firstAttribute="leading" secondItem="D9e-oq-IpP" secondAttribute="leading" id="Z2w-0o-Qd1"/>
+                            <constraint firstItem="D9e-oq-IpP" firstAttribute="leading" secondItem="YWo-Bl-ReG" secondAttribute="leading" id="ZhP-kD-6fs"/>
+                            <constraint firstItem="YWo-Bl-ReG" firstAttribute="leading" secondItem="NKX-DC-2ZG" secondAttribute="leading" id="ci8-2H-f2i"/>
+                            <constraint firstItem="YWo-Bl-ReG" firstAttribute="top" secondItem="nAX-66-0hL" secondAttribute="top" id="dM0-N9-xTn"/>
+                            <constraint firstItem="0ku-GP-Vrf" firstAttribute="bottom" secondItem="38Z-03-z6P" secondAttribute="bottom" id="dcX-yZ-mUZ"/>
+                            <constraint firstItem="nAX-66-0hL" firstAttribute="leading" secondItem="j7g-iO-DOa" secondAttribute="leading" id="dtS-Rl-3J2"/>
+                            <constraint firstItem="TVi-qp-fp6" firstAttribute="top" secondItem="nAX-66-0hL" secondAttribute="bottom" constant="16" id="hh5-WT-e5N"/>
+                            <constraint firstItem="NKX-DC-2ZG" firstAttribute="bottom" secondItem="TVi-qp-fp6" secondAttribute="bottom" id="jgC-Ih-1Hm"/>
+                            <constraint firstItem="j7g-iO-DOa" firstAttribute="top" secondItem="38Z-03-z6P" secondAttribute="bottom" constant="16" id="mWn-m7-ua2"/>
+                            <constraint firstItem="YWo-Bl-ReG" firstAttribute="trailing" secondItem="NKX-DC-2ZG" secondAttribute="trailing" id="qSo-Au-8sd"/>
+                            <constraint firstItem="0ku-GP-Vrf" firstAttribute="trailing" secondItem="D9e-oq-IpP" secondAttribute="trailing" id="tmp-ec-bEX"/>
+                            <constraint firstItem="D9e-oq-IpP" firstAttribute="bottom" secondItem="j7g-iO-DOa" secondAttribute="bottom" id="u3t-Zf-Izr"/>
+                            <constraint firstItem="0ku-GP-Vrf" firstAttribute="trailing" secondItem="Xoa-6e-0Ou" secondAttribute="trailingMargin" id="x8z-OE-dCe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2P4-Og-Kxr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Events categories" id="H3A-PD-amR">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RnV-76-x2E">
+                            <connections>
+                                <action selector="onCancelClick:" destination="CsY-TQ-wmU" id="B4K-Me-YBl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="DPX-HT-tgf">
+                            <connections>
+                                <action selector="onSaveClick:" destination="CsY-TQ-wmU" id="Z87-oA-5fL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cbAwards" destination="TVi-qp-fp6" id="vVl-pa-4Co"/>
+                        <outlet property="cbConferences" destination="38Z-03-z6P" id="Ay6-Wf-FCe"/>
+                        <outlet property="cbExhibitions" destination="j7g-iO-DOa" id="SfN-rf-yAw"/>
+                        <outlet property="cbFestivals" destination="nAX-66-0hL" id="EMu-wk-6cF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stM-Gs-maH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="-9"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5fs-ss-e4i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jzp-Pe-HE6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZnT-Ii-Eb1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CsY-TQ-wmU" kind="relationship" relationship="rootViewController" id="ifQ-S8-c7s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTc-en-iUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1332" y="-9"/>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar_multiple_orange" width="24" height="24"/>
         <image name="calendar_orange" width="24" height="24"/>
         <image name="clock_orange" width="24" height="24"/>
         <image name="filter_orange" width="24" height="24"/>

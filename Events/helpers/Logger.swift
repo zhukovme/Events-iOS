@@ -4,6 +4,9 @@
 //
 
 class Logger {
+    private init() {
+    }
+
     static func log(_ items: Any...) {
         print(items)
     }

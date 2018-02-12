@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - BEMCheckBox (1.4.1)
   - DITranquillity (3.1.3)
   - Kingfisher (4.6.1)
   - ObjectMapper (3.1.0)
@@ -11,24 +12,29 @@ PODS:
   - RxCocoa (4.1.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.1.1)
+  - SwiftMessages (4.1.0)
 
 DEPENDENCIES:
+  - BEMCheckBox
   - DITranquillity
   - Kingfisher (~> 4.0)
   - ObjectMapper (~> 3.1)
   - RxAlamofire
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - SwiftMessages
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   DITranquillity: d600f3eef8a14a559fb1eea9f7611c4325cc4418
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   RxAlamofire: 6ea579ac53bf14cb4bc7049a3866e5a769989b1d
   RxCocoa: fd0862fd2df95fa55562ad28ffd2522c25eb4a85
   RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
+  SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
 
-PODFILE CHECKSUM: 1c4089c59c7303961bae97df0a08efaf99f29bb4
+PODFILE CHECKSUM: 3f8d0a946221080c6a924158ac896df3a95c3f81
 
 COCOAPODS: 1.4.0

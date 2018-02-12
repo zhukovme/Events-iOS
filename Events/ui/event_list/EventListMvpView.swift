@@ -6,7 +6,9 @@
 //  Copyright © 2018 Michael Zhukov. All rights reserved.
 //
 
-protocol EventListMvpView {
+protocol EventListMvpView: MvpView {
+    func showRefreshing()
+    func hideRefreshing()
     func reloadTable()
-    func showError(message: String)
+    func showMessage(type: MessageType, message: String)
 }

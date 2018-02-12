@@ -8,6 +8,7 @@
 
 import RxSwift
 import ObjectMapper
+import Alamofire
 
 extension ObservableType {
     public func mapObject<T: Mappable>(type: T.Type) -> Observable<T> {
@@ -28,5 +29,14 @@ extension ObservableType {
             }
             return Observable.just(objects)
         }
+    }
+}
+
+extension Request {
+    public func debugLog() -> Self {
+        #if DEBUG
+            Logger.log(self)
+        #endif
+        return self
     }
 }
