@@ -9,14 +9,14 @@
 import UIKit
 
 final class EventListViewController: ViewController<EventListPresenter>, UITableViewDelegate, EventListMvpView {
-    @IBOutlet weak var tableView: UITableView!
+    // MARK: Views
 
-    @objc private func onRefresh(_ sender: Any) {
-        presenter?.onRefresh()
-    }
+    @IBOutlet weak var tableView: UITableView!
+    private let refreshControl = UIRefreshControl()
 
     var messages: MessagesView?
-    private let refreshControl = UIRefreshControl()
+
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +25,24 @@ final class EventListViewController: ViewController<EventListPresenter>, UITable
         setupRefreshControl()
         presenter?.viewDidLoad(view: self)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        presenter?.viewWillAppear()
+
+    // MARK: Actions
+
+    @objc private func onRefresh(_ sender: Any) {
+        presenter?.onRefresh()
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.onCellClick(row: indexPath.row)
     }
+
+    @IBAction func unwindToEventList(segue: UIStoryboardSegue) {
+        if let _ = segue.source as? CategoryFilterViewController {
+            presenter?.onRefresh()
+        }
+    }
+
+    // MARK: MVP protocol methods
 
     func showRefreshing() {
         if !refreshControl.isRefreshing {
@@ -51,6 +61,8 @@ final class EventListViewController: ViewController<EventListPresenter>, UITable
     func showMessage(type: MessageType, message: String) {
         messages?.show(type: type, body: message)
     }
+
+    //MARK: Private methods
 
     private func setupRefreshControl() {
         if #available(iOS 10.0, *) {

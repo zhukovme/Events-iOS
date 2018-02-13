@@ -21,9 +21,6 @@ class EventListPresenter: TablePresenter {
     func viewDidLoad(view: EventListMvpView) {
         self.view = view
         cellIdentifier = "EventListCell"
-    }
-
-    func viewWillAppear() {
         loadEventList()
     }
 

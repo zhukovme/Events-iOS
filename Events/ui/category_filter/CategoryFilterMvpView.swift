@@ -8,5 +8,4 @@
 
 protocol CategoryFilterMvpView: MvpView {
     func showCategories(conferences: Bool, exhibitions: Bool, festivals: Bool, awards: Bool)
-    func dismissViewController()
 }

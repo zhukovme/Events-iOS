@@ -24,13 +24,8 @@ class CategoryFilterPresenter: Presenter {
                             awards: categories.awards)
     }
 
-    func onCancelClick() {
-        view?.dismissViewController()
-    }
-
     func onSaveClick(conferences: Bool, exhibitions: Bool, festivals: Bool, awards: Bool) {
         eventsInteractor.categories = EventsCategories(conferences: conferences, exhibitions: exhibitions,
                                                           festivals: festivals, awards: awards)
-        view?.dismissViewController()
     }
 }
