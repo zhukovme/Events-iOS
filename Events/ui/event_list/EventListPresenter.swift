@@ -16,14 +16,7 @@ class EventListPresenter: TablePresenter {
     }
 
     private var view: EventListMvpView?
-
     private let disposeBag = DisposeBag()
-    private var events: [Event] = [] {
-        didSet {
-            setTableItems(events)
-            view?.reloadTable()
-        }
-    }
 
     func viewDidLoad(view: EventListMvpView) {
         self.view = view
@@ -53,9 +46,9 @@ class EventListPresenter: TablePresenter {
                 if events.isEmpty {
                     self.view?.showMessage(type: .info, message: "No events")
                 }
-                self.events = events
+                self.setTableItems(events)
+                self.view?.reloadTable()
             }, onError: { error in
-                Logger.log(error)
                 self.view?.showMessage(type: .error, message: "Server error")
             })
             .disposed(by: disposeBag)

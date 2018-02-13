@@ -35,7 +35,9 @@ final class EventListViewController: ViewController<EventListPresenter>, UITable
     }
 
     func showRefreshing() {
-        refreshControl.beginRefreshing()
+        if !refreshControl.isRefreshing {
+            refreshControl.beginRefreshingWithAnimation()
+        }
     }
 
     func hideRefreshing() {
