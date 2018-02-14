@@ -28,7 +28,8 @@ class EventListPresenter: TablePresenter {
         loadEventList()
     }
 
-    func onCellClick(row: Int) {
+    func getEvent(row: Int) -> Event? {
+        return sections[0].items[row] as? Event
     }
 
     private func loadEventList() {

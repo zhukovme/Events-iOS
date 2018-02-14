@@ -46,9 +46,13 @@ class TablePresenter: Presenter, UITableViewDataSource {
         return cell
     }
 
-    func setTableItems(_ items: [ViewObject]) {
+    func setTableItems(section: Int = 0, _ items: [ViewObject]) {
         sections.removeAll()
-        sections.insert(TableSection.init(title: nil, items: items), at: 0)
+        sections.insert(TableSection.init(title: nil, items: items), at: section)
+    }
+
+    func getItem(section: Int = 0, row: Int) -> ViewObject? {
+        return sections[section].items[row]
     }
 }
 

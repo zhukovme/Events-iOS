@@ -30,6 +30,10 @@
 		45BB70D420319F0C002C67BC /* CategoryFilterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB70D320319F0C002C67BC /* CategoryFilterModule.swift */; };
 		45BB70D62031A506002C67BC /* EventsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB70D52031A506002C67BC /* EventsSettings.swift */; };
 		45BB70DA2031C28F002C67BC /* EventsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB70D92031C28F002C67BC /* EventsInteractor.swift */; };
+		45BB70DF20341336002C67BC /* EventInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB70DE20341336002C67BC /* EventInfoViewController.swift */; };
+		45BB70E120341499002C67BC /* EventInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB70E020341499002C67BC /* EventInfoPresenter.swift */; };
+		45BB70E3203414DB002C67BC /* EventInfoMvpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB70E2203414DB002C67BC /* EventInfoMvpView.swift */; };
+		45BB70E520341594002C67BC /* EventInfoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB70E420341594002C67BC /* EventInfoModule.swift */; };
 		45D7F76320258D32005AE528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F76220258D32005AE528 /* AppDelegate.swift */; };
 		45D7F76820258D32005AE528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76620258D32005AE528 /* Main.storyboard */; };
 		45D7F76A20258D32005AE528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76920258D32005AE528 /* Assets.xcassets */; };
@@ -92,6 +96,10 @@
 		45BB70D320319F0C002C67BC /* CategoryFilterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterModule.swift; sourceTree = "<group>"; };
 		45BB70D52031A506002C67BC /* EventsSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsSettings.swift; sourceTree = "<group>"; };
 		45BB70D92031C28F002C67BC /* EventsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsInteractor.swift; sourceTree = "<group>"; };
+		45BB70DE20341336002C67BC /* EventInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoViewController.swift; sourceTree = "<group>"; };
+		45BB70E020341499002C67BC /* EventInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoPresenter.swift; sourceTree = "<group>"; };
+		45BB70E2203414DB002C67BC /* EventInfoMvpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoMvpView.swift; sourceTree = "<group>"; };
+		45BB70E420341594002C67BC /* EventInfoModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventInfoModule.swift; sourceTree = "<group>"; };
 		45D7F75F20258D32005AE528 /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D7F76220258D32005AE528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45D7F76720258D32005AE528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,6 +211,7 @@
 				45142B3C20304BEE0013B560 /* base */,
 				45142B122025C3000013B560 /* event_list */,
 				45B728D42030D34B00563078 /* category_filter */,
+				45BB70DD203412BD002C67BC /* event_info */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -270,6 +279,17 @@
 				45BB70D92031C28F002C67BC /* EventsInteractor.swift */,
 			);
 			path = interactors;
+			sourceTree = "<group>";
+		};
+		45BB70DD203412BD002C67BC /* event_info */ = {
+			isa = PBXGroup;
+			children = (
+				45BB70DE20341336002C67BC /* EventInfoViewController.swift */,
+				45BB70E2203414DB002C67BC /* EventInfoMvpView.swift */,
+				45BB70E020341499002C67BC /* EventInfoPresenter.swift */,
+				45BB70E420341594002C67BC /* EventInfoModule.swift */,
+			);
+			path = event_info;
 			sourceTree = "<group>";
 		};
 		45D7F75620258D32005AE528 = {
@@ -661,7 +681,9 @@
 				45142B2A202871D30013B560 /* EventListCell.swift in Sources */,
 				45142B352028E8560013B560 /* AppModule.swift in Sources */,
 				45142B0F2025A5770013B560 /* Event.swift in Sources */,
+				45BB70E120341499002C67BC /* EventInfoPresenter.swift in Sources */,
 				45BB70D02031900C002C67BC /* Preferences.swift in Sources */,
+				45BB70DF20341336002C67BC /* EventInfoViewController.swift in Sources */,
 				45142B1E2025DB1A0013B560 /* EventListViewController.swift in Sources */,
 				45142B0C2025A4F10013B560 /* Api.swift in Sources */,
 				45142B2820275A8C0013B560 /* ViewExtensions.swift in Sources */,
@@ -676,7 +698,9 @@
 				45B728D62030D36A00563078 /* CategoryFilterPresenter.swift in Sources */,
 				45BB70D420319F0C002C67BC /* CategoryFilterModule.swift in Sources */,
 				45142B3B2028EFBE0013B560 /* EventListMvpView.swift in Sources */,
+				45BB70E3203414DB002C67BC /* EventInfoMvpView.swift in Sources */,
 				CC968CA6366676835A8B19A3 /* Errors.swift in Sources */,
+				45BB70E520341594002C67BC /* EventInfoModule.swift in Sources */,
 				CC968D61966B56C4CE380C91 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -847,6 +871,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = "$(SRCROOT)/Events/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhukovme.events;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -863,6 +888,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = "$(SRCROOT)/Events/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhukovme.events;
 				PRODUCT_NAME = "$(TARGET_NAME)";

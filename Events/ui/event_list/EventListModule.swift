@@ -11,8 +11,10 @@ import DITranquillity
 class EventListModule: DIPart {
     static func load(container: DIContainer) {
         container.register1(EventListPresenter.init)
+            .lifetime(.perContainer)
         container.register(EventListViewController.self)
             .injection { $0.presenter = $1 }
             .injection { $0.messages = $1 }
+            .lifetime(.perContainer)
     }
 }

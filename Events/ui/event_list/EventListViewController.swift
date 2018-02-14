@@ -20,20 +20,37 @@ final class EventListViewController: ViewController<EventListPresenter>, UITable
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.view.backgroundColor = UIColor.white
         tableView.delegate = self
         tableView.dataSource = presenter
         setupRefreshControl()
         presenter?.viewDidLoad(view: self)
     }
 
+    // MARK: Navigation
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let destination = segue.destination as? EventInfoViewController else {
+            Logger.log("Unexpected destination: \(segue.destination)")
+            return
+        }
+        guard let selectedCell = sender as? EventListCell else {
+            Logger.log("Unexpected sender: \(sender ?? "")")
+            return
+        }
+        guard let indexPath = tableView.indexPath(for: selectedCell) else {
+            Logger.log("The selected cell is not being displayed by the table")
+            return
+        }
+        let selectedMeal = presenter?.getEvent(row: indexPath.row)
+        destination.eventId = selectedMeal?.id
+    }
+
     // MARK: Actions
 
     @objc private func onRefresh(_ sender: Any) {
         presenter?.onRefresh()
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.onCellClick(row: indexPath.row)
     }
 
     @IBAction func unwindToEventList(segue: UIStoryboardSegue) {

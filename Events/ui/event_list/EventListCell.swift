@@ -16,13 +16,13 @@ class EventListCell: ListCell {
     }
     @IBOutlet weak var labelTitle: UILabel!
 
-    @IBOutlet weak var viewLocation: UIView!
+    @IBOutlet weak var ivLocation: UIImageView!
     @IBOutlet weak var labelLocation: UILabel!
 
-    @IBOutlet weak var viewDate: UIView!
+    @IBOutlet weak var ivDate: UIImageView!
     @IBOutlet weak var labelDate: UILabel!
 
-    @IBOutlet weak var viewTime: UIView!
+    @IBOutlet weak var ivTime: UIImageView!
     @IBOutlet weak var labelTime: UILabel!
 
     override func configure(for viewObject: ViewObject) {
@@ -36,17 +36,20 @@ class EventListCell: ListCell {
     }
 
     private func showLocation(_ location: String) {
-        viewLocation.isHidden = location.isEmpty
         labelLocation.text = location
+        ivLocation.isHidden = location.isEmpty
+        labelLocation.isHidden = location.isEmpty
     }
 
     private func showDate(_ date: String) {
-        viewDate.isHidden = date.isEmpty
+        ivDate.isHidden = date.isEmpty
+        labelDate.isHidden = date.isEmpty
         labelDate.text = date
     }
 
     private func showTime(_ time: String) {
-        viewTime.isHidden = time.isEmpty
+        ivTime.isHidden = time.isEmpty
+        labelTime.isHidden = time.isEmpty
         labelTime.text = time
     }
 }

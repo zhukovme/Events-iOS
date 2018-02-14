@@ -11,16 +11,21 @@ import DITranquillity
 class AppModule: DIFramework {
     static func load(container: DIContainer) {
         // Service
-        container.register { Api() }
+        container.register(Api.init)
+            .lifetime(.single)
         // Database
-        container.register { Preferences() }
+        container.register(Preferences.init)
+            .lifetime(.single)
 
         // Interactors
-        container.register { EventsInteractor(api: $0, preferences: $1) }
+        container.register(EventsInteractor.init)
+            .lifetime(.single)
 
         // View
-        container.register { MessagesView() }
+        container.register(MessagesView.init)
+            .lifetime(.single)
         container.append(part: EventListModule.self)
         container.append(part: CategoryFilterModule.self)
+        container.append(part: EventInfoModule.self)
     }
 }
