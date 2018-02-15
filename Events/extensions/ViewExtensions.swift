@@ -32,3 +32,26 @@ extension UIRefreshControl {
         }
     }
 }
+
+extension UILabel {
+    func textOrHide(text: String?, alsoHide: UIView? = nil) {
+        if let text = text, !text.isEmpty {
+            self.text = text
+        } else {
+            addZeroHeightConstraint()
+            self.isHidden = true
+            alsoHide?.addZeroHeightConstraint()
+            alsoHide?.isHidden = true
+        }
+    }
+}
+
+extension UIView {
+    internal func addZeroHeightConstraint() {
+        addConstraint(NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height,
+                                         relatedBy: NSLayoutRelation.equal, toItem: nil,
+                                         attribute: NSLayoutAttribute.notAnAttribute,
+                                         multiplier: 1, constant: 0))
+        layoutIfNeeded()
+    }
+}

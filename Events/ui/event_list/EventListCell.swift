@@ -9,11 +9,7 @@
 import UIKit
 
 class EventListCell: ListCell {
-    @IBOutlet weak var ivImage: UIImageView! {
-        didSet {
-            ivImage.roundCorners()
-        }
-    }
+    @IBOutlet weak var ivImage: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
 
     @IBOutlet weak var ivLocation: UIImageView!
@@ -29,27 +25,10 @@ class EventListCell: ListCell {
         if let event = viewObject as? Event {
             labelTitle.text = event.title ?? ""
             ivImage.loadImage(url: event.imageUrl)
-            showLocation(event.location?.fromHtml ?? "")
-            showDate(event.date ?? "")
-            showTime(event.time ?? "")
+            ivImage.roundCorners()
+            labelLocation.textOrHide(text: event.location?.fromHtml, alsoHide: ivLocation)
+            labelDate.textOrHide(text: event.date, alsoHide: ivDate)
+            labelTime.textOrHide(text: event.time, alsoHide: ivTime)
         }
-    }
-
-    private func showLocation(_ location: String) {
-        labelLocation.text = location
-        ivLocation.isHidden = location.isEmpty
-        labelLocation.isHidden = location.isEmpty
-    }
-
-    private func showDate(_ date: String) {
-        ivDate.isHidden = date.isEmpty
-        labelDate.isHidden = date.isEmpty
-        labelDate.text = date
-    }
-
-    private func showTime(_ time: String) {
-        ivTime.isHidden = time.isEmpty
-        labelTime.isHidden = time.isEmpty
-        labelTime.text = time
     }
 }

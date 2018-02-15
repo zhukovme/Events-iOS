@@ -14,7 +14,7 @@ final class EventListViewController: ViewController<EventListPresenter>, UITable
     @IBOutlet weak var tableView: UITableView!
     private let refreshControl = UIRefreshControl()
 
-    var messages: MessagesView?
+    var messagesView: MessagesView?
 
     // MARK: Lifecycle
 
@@ -32,16 +32,13 @@ final class EventListViewController: ViewController<EventListPresenter>, UITable
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         guard let destination = segue.destination as? EventInfoViewController else {
-            Logger.log("Unexpected destination: \(segue.destination)")
             return
         }
         guard let selectedCell = sender as? EventListCell else {
-            Logger.log("Unexpected sender: \(sender ?? "")")
-            return
+            fatalError("Unexpected sender: \(sender ?? "")")
         }
         guard let indexPath = tableView.indexPath(for: selectedCell) else {
-            Logger.log("The selected cell is not being displayed by the table")
-            return
+            fatalError("The selected cell is not being displayed by the table")
         }
         let selectedMeal = presenter?.getEvent(row: indexPath.row)
         destination.eventId = selectedMeal?.id
@@ -76,7 +73,7 @@ final class EventListViewController: ViewController<EventListPresenter>, UITable
     }
 
     func showMessage(type: MessageType, message: String) {
-        messages?.show(type: type, body: message)
+        messagesView?.show(type: type, body: message)
     }
 
     //MARK: Private methods

@@ -14,6 +14,7 @@ class EventInfoModule: DIPart {
             .lifetime(.perContainer)
         container.register(EventInfoViewController.self)
             .injection { $0.presenter = $1 }
+            .injection { $0.messagesView = $1 }
             .lifetime(.perContainer)
     }
 }

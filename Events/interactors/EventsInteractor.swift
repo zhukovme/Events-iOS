@@ -41,6 +41,16 @@ class EventsInteractor {
             }
     }
 
+    func getEvent(eventId: String) -> Observable<EventInfo?> {
+        return api.eventInfo(params: [
+            "id" : eventId
+//            "lang" : ""
+            ])
+            .map { response in
+                return response.resource
+            }
+    }
+
     private func setupCategories() -> String {
         var categories = [String]()
         if self.categories.conferences {

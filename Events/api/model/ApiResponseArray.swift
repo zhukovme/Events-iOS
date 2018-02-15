@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Response<T: Mappable>: Mappable {
+class ApiResponseArray<T: Mappable>: Mappable {
     var status: String?
     var resource: [T]?
 

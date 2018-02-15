@@ -7,4 +7,8 @@
 //
 
 protocol EventInfoMvpView: MvpView {
+    func showLoading()
+    func hideLoading()
+    func showMessage(type: MessageType, message: String)
+    func showEventInfo(eventInfo: EventInfo)
 }
