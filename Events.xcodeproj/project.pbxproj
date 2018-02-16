@@ -44,10 +44,8 @@
 		45D7F78320258D32005AE528 /* EventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F78220258D32005AE528 /* EventsUITests.swift */; };
 		4FFF97F8FB8E75AF66FA98E3 /* Pods_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA32B35A04788DE6E5F89D56 /* Pods_Events.framework */; };
 		A15CF7C3289064927097177B /* Pods_EventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CE838E30F7ECD7AB2A16A /* Pods_EventsUITests.framework */; };
-		B13A588EB2F25A9E3E505DB8 /* Pods_Smile_Expo_EventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E16A95909F12219F7B43A1 /* Pods_Smile_Expo_EventsUITests.framework */; };
 		CC968CA6366676835A8B19A3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC968D7CE368B49B736A8F0F /* Errors.swift */; };
 		CC968D61966B56C4CE380C91 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9688425273E50714305755 /* Logger.swift */; };
-		DA60B52748170CB6C31C6A8A /* Pods_Smile_Expo_EventsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB64FF866113EE9C59F1C25 /* Pods_Smile_Expo_EventsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,7 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA60B52748170CB6C31C6A8A /* Pods_Smile_Expo_EventsTests.framework in Frameworks */,
 				09746FE036C4843F646272A2 /* Pods_EventsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13A588EB2F25A9E3E505DB8 /* Pods_Smile_Expo_EventsUITests.framework in Frameworks */,
 				A15CF7C3289064927097177B /* Pods_EventsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -912,9 +908,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smile Expo EventsTests/Info.plist";
+				DEVELOPMENT_TEAM = 52674H43Y8;
+				INFOPLIST_FILE = EventsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhukovme.Smile-Expo-EventsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhukovme.eventsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -929,9 +926,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smile Expo EventsTests/Info.plist";
+				DEVELOPMENT_TEAM = 52674H43Y8;
+				INFOPLIST_FILE = EventsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhukovme.Smile-Expo-EventsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhukovme.eventsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -945,13 +943,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smile Expo EventsUITests/Info.plist";
+				DEVELOPMENT_TEAM = 52674H43Y8;
+				INFOPLIST_FILE = EventsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhukovme.Smile-Expo-EventsUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhukovme.eventsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Smile Expo Events";
+				TEST_TARGET_NAME = Events;
 			};
 			name = Debug;
 		};
@@ -961,13 +960,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Smile Expo EventsUITests/Info.plist";
+				DEVELOPMENT_TEAM = 52674H43Y8;
+				INFOPLIST_FILE = EventsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhukovme.Smile-Expo-EventsUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhukovme.eventsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Smile Expo Events";
+				TEST_TARGET_NAME = Events;
 			};
 			name = Release;
 		};
