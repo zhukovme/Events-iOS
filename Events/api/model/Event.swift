@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Event: Mappable {
+class EventItem: Mappable {
     var id: String?
     var title: String?
     var date: String?
@@ -18,6 +18,17 @@ class Event: Mappable {
     var imageUrl: String?
 
     required init?(map: Map) {
+    }
+
+    init(id: String?, title: String?, date: String?, location: String?, category: String?, time: String?,
+         imageUrl: String?) {
+        self.id = id
+        self.title = title
+        self.date = date
+        self.location = location
+        self.category = category
+        self.time = time
+        self.imageUrl = imageUrl
     }
 
     func mapping(map: Map) {

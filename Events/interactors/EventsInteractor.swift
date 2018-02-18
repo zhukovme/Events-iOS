@@ -11,10 +11,12 @@ import RxSwift
 class EventsInteractor {
     private let api: Api
     private let preferences: Preferences
+    private let paramsBuilder: ParamsBuilder
 
-    init(api: Api, preferences: Preferences) {
+    init(api: Api, preferences: Preferences, paramsBuilder: ParamsBuilder) {
         self.api = api
         self.preferences = preferences
+        self.paramsBuilder = paramsBuilder
     }
 
     var categories: EventsCategories {
@@ -26,45 +28,19 @@ class EventsInteractor {
         }
     }
 
-    func getEvents() -> Observable<[Event]> {
-        let categories = setupCategories()
-        return api.events(params: [
-//                "day" : "",
-//                "month" : "",
-//                "year" : "",
-//                "limit" : "",
-                "category" : categories
-//                "lang" : ""
-            ])
+    func getEvents() -> Observable<[EventItem]> {
+        let params = paramsBuilder.forEvents(categories: categories)
+        return api.events(params: params)
             .map { response in
-                return response.resource ?? [Event]()
+                return response.resource ?? [EventItem]()
             }
     }
 
-    func getEvent(eventId: String) -> Observable<EventInfo?> {
-        return api.eventInfo(params: [
-            "id" : eventId
-//            "lang" : ""
-            ])
+    func getEventInfo(eventId: String) -> Observable<EventInfo?> {
+        let params = paramsBuilder.forEventInfo(eventId: eventId)
+        return api.eventInfo(params: params)
             .map { response in
                 return response.resource
             }
-    }
-
-    private func setupCategories() -> String {
-        var categories = [String]()
-        if self.categories.conferences {
-            categories.append("1")
-        }
-        if self.categories.exhibitions {
-            categories.append("2")
-        }
-        if self.categories.festivals {
-            categories.append("24")
-        }
-        if self.categories.awards {
-            categories.append("19")
-        }
-        return categories.joined(separator: "-")
     }
 }

@@ -12,9 +12,9 @@ import RxSwift
 class Api {
     private let BASE_URL = "https://apia.exp0.in/api.php/smileExpo/"
 
-    func events(params: [String: Any]?) -> Observable<ApiResponseArray<Event>> {
+    func events(params: [String: Any]?) -> Observable<ApiResponseArray<EventItem>> {
         return requestJSON(.get, BASE_URL + "eventsFeed", parameters: params)
-                .mapObject(type: ApiResponseArray<Event>.self)
+                .mapObject(type: ApiResponseArray<EventItem>.self)
     }
 
     func eventInfo(params: [String: Any]?) -> Observable<ApiResponse<EventInfo>> {

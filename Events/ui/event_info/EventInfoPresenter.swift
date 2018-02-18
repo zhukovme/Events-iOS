@@ -28,7 +28,7 @@ class EventInfoPresenter: Presenter {
     }
 
     private func loadEventInfo(eventId: String) {
-        eventsInteractor.getEvent(eventId: eventId)
+        eventsInteractor.getEventInfo(eventId: eventId)
             .applySchedulers()
             .do(onSubscribe: {
                 self.view?.showLoading()

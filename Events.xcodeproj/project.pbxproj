@@ -23,6 +23,13 @@
 		45142B3B2028EFBE0013B560 /* EventListMvpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B3A2028EFBE0013B560 /* EventListMvpView.swift */; };
 		45142B3E20304BFF0013B560 /* Arch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45142B3D20304BFF0013B560 /* Arch.swift */; };
 		451485B92034CE2900F971DC /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451485B82034CE2900F971DC /* ApiResponse.swift */; };
+		451485C12039816600F971DC /* EventsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451485C02039816600F971DC /* EventsInteractorTests.swift */; };
+		451DA934203992F200E2F9DC /* ApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DA933203992F200E2F9DC /* ApiMock.swift */; };
+		451DA936203993BF00E2F9DC /* PreferencesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DA935203993BF00E2F9DC /* PreferencesMock.swift */; };
+		451DA93C203A2A9D00E2F9DC /* ParamsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DA93B203A2A9D00E2F9DC /* ParamsBuilder.swift */; };
+		451DA93E203A2CA300E2F9DC /* ParamsBuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DA93D203A2CA300E2F9DC /* ParamsBuilderTest.swift */; };
+		451DA942203AE3AC00E2F9DC /* ParamsBuilderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DA941203AE3AC00E2F9DC /* ParamsBuilderMock.swift */; };
+		451DA944203AF21200E2F9DC /* EventsCategoriesMockExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DA943203AF21200E2F9DC /* EventsCategoriesMockExtension.swift */; };
 		45B728D12030AA9C00563078 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B728D02030AA9C00563078 /* MessagesView.swift */; };
 		45B728D32030D2FA00563078 /* CategoryFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B728D22030D2FA00563078 /* CategoryFilterViewController.swift */; };
 		45B728D62030D36A00563078 /* CategoryFilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B728D52030D36A00563078 /* CategoryFilterPresenter.swift */; };
@@ -40,12 +47,13 @@
 		45D7F76820258D32005AE528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76620258D32005AE528 /* Main.storyboard */; };
 		45D7F76A20258D32005AE528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76920258D32005AE528 /* Assets.xcassets */; };
 		45D7F76D20258D32005AE528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D7F76B20258D32005AE528 /* LaunchScreen.storyboard */; };
-		45D7F77820258D32005AE528 /* EventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F77720258D32005AE528 /* EventsTests.swift */; };
 		45D7F78320258D32005AE528 /* EventsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D7F78220258D32005AE528 /* EventsUITests.swift */; };
 		4FFF97F8FB8E75AF66FA98E3 /* Pods_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA32B35A04788DE6E5F89D56 /* Pods_Events.framework */; };
+		74B785EAD0777364DB2AC832 /* Pods_Events_EventsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831BE29492A8FBE3BDCA6999 /* Pods_Events_EventsTests.framework */; };
 		A15CF7C3289064927097177B /* Pods_EventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9CE838E30F7ECD7AB2A16A /* Pods_EventsUITests.framework */; };
 		CC968CA6366676835A8B19A3 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC968D7CE368B49B736A8F0F /* Errors.swift */; };
 		CC968D61966B56C4CE380C91 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9688425273E50714305755 /* Logger.swift */; };
+		D1AEEA0FA53831425B8B08D9 /* Pods_Events_EventsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050C10529E8F7FF8E1E4D6C1 /* Pods_Events_EventsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +75,7 @@
 
 /* Begin PBXFileReference section */
 		046EBAD9334C88C6A290B7A6 /* Pods_EventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		050C10529E8F7FF8E1E4D6C1 /* Pods_Events_EventsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Events_EventsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0647CD574D1F126E55785C4B /* Pods-EventsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTests/Pods-EventsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0861A59B9C8FD70ABB98BB10 /* Pods-Smile Expo Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo Events.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo Events/Pods-Smile Expo Events.release.xcconfig"; sourceTree = "<group>"; };
 		1048E914EBACFCFA06D566A7 /* Pods-EventsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsUITests/Pods-EventsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +98,13 @@
 		45142B3A2028EFBE0013B560 /* EventListMvpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListMvpView.swift; sourceTree = "<group>"; };
 		45142B3D20304BFF0013B560 /* Arch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arch.swift; sourceTree = "<group>"; };
 		451485B82034CE2900F971DC /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		451485C02039816600F971DC /* EventsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsInteractorTests.swift; sourceTree = "<group>"; };
+		451DA933203992F200E2F9DC /* ApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMock.swift; sourceTree = "<group>"; };
+		451DA935203993BF00E2F9DC /* PreferencesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesMock.swift; sourceTree = "<group>"; };
+		451DA93B203A2A9D00E2F9DC /* ParamsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamsBuilder.swift; sourceTree = "<group>"; };
+		451DA93D203A2CA300E2F9DC /* ParamsBuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamsBuilderTest.swift; sourceTree = "<group>"; };
+		451DA941203AE3AC00E2F9DC /* ParamsBuilderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParamsBuilderMock.swift; sourceTree = "<group>"; };
+		451DA943203AF21200E2F9DC /* EventsCategoriesMockExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCategoriesMockExtension.swift; sourceTree = "<group>"; };
 		45B728D02030AA9C00563078 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		45B728D22030D2FA00563078 /* CategoryFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterViewController.swift; sourceTree = "<group>"; };
 		45B728D52030D36A00563078 /* CategoryFilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterPresenter.swift; sourceTree = "<group>"; };
@@ -109,7 +125,6 @@
 		45D7F76C20258D32005AE528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45D7F76E20258D32005AE528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D7F77320258D32005AE528 /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45D7F77720258D32005AE528 /* EventsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTests.swift; sourceTree = "<group>"; };
 		45D7F77920258D32005AE528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45D7F77E20258D32005AE528 /* EventsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D7F78220258D32005AE528 /* EventsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsUITests.swift; sourceTree = "<group>"; };
@@ -118,13 +133,18 @@
 		578CACBF1FD6D57861CA360E /* Pods-Smile Expo Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo Events/Pods-Smile Expo Events.debug.xcconfig"; sourceTree = "<group>"; };
 		5BB64FF866113EE9C59F1C25 /* Pods_Smile_Expo_EventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smile_Expo_EventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77348645460B3E8F4125107D /* Pods_Smile_Expo_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smile_Expo_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC3610E5155D3D50C498CFA /* Pods-Events-EventsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events-EventsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Events-EventsTests/Pods-Events-EventsTests.release.xcconfig"; sourceTree = "<group>"; };
+		831BE29492A8FBE3BDCA6999 /* Pods_Events_EventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Events_EventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C41E58D5023CFC2D14DA0A /* Pods-Events-EventsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events-EventsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Events-EventsUITests/Pods-Events-EventsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		92853F315A977E721FBEA33F /* Pods-Smile Expo EventsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo EventsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo EventsTests/Pods-Smile Expo EventsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A856CCBF1057372423B2B6C3 /* Pods-Events-EventsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events-EventsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events-EventsTests/Pods-Events-EventsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3D5BE308C5CD8A24E2763D7 /* Pods-EventsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsUITests/Pods-EventsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CC9688425273E50714305755 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		CC968D7CE368B49B736A8F0F /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		CE9CE838E30F7ECD7AB2A16A /* Pods_EventsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDB2AF696D81C1E941C1D3F /* Pods-Smile Expo EventsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo EventsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo EventsUITests/Pods-Smile Expo EventsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E409B87B1264A7D44946B71B /* Pods-Smile Expo EventsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smile Expo EventsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smile Expo EventsUITests/Pods-Smile Expo EventsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F08AEB99F6C1E92C8456902C /* Pods-Events-EventsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events-EventsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events-EventsUITests/Pods-Events-EventsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA32B35A04788DE6E5F89D56 /* Pods_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -142,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09746FE036C4843F646272A2 /* Pods_EventsTests.framework in Frameworks */,
+				74B785EAD0777364DB2AC832 /* Pods_Events_EventsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15CF7C3289064927097177B /* Pods_EventsUITests.framework in Frameworks */,
+				D1AEEA0FA53831425B8B08D9 /* Pods_Events_EventsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +193,10 @@
 				15A06B7CA360BABB62DC1937 /* Pods-EventsTests.release.xcconfig */,
 				1048E914EBACFCFA06D566A7 /* Pods-EventsUITests.debug.xcconfig */,
 				B3D5BE308C5CD8A24E2763D7 /* Pods-EventsUITests.release.xcconfig */,
+				A856CCBF1057372423B2B6C3 /* Pods-Events-EventsTests.debug.xcconfig */,
+				7FC3610E5155D3D50C498CFA /* Pods-Events-EventsTests.release.xcconfig */,
+				F08AEB99F6C1E92C8456902C /* Pods-Events-EventsUITests.debug.xcconfig */,
+				91C41E58D5023CFC2D14DA0A /* Pods-Events-EventsUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -180,6 +206,7 @@
 			children = (
 				45142B0D2025A5620013B560 /* model */,
 				45142B0B2025A4F10013B560 /* Api.swift */,
+				451DA93B203A2A9D00E2F9DC /* ParamsBuilder.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -235,6 +262,17 @@
 				45142B3D20304BFF0013B560 /* Arch.swift */,
 			);
 			path = base;
+			sourceTree = "<group>";
+		};
+		451485C620398E9500F971DC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				451DA933203992F200E2F9DC /* ApiMock.swift */,
+				451DA935203993BF00E2F9DC /* PreferencesMock.swift */,
+				451DA941203AE3AC00E2F9DC /* ParamsBuilderMock.swift */,
+				451DA943203AF21200E2F9DC /* EventsCategoriesMockExtension.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		45B728CF2030A9FD00563078 /* helpers */ = {
@@ -338,7 +376,9 @@
 		45D7F77620258D32005AE528 /* EventsTests */ = {
 			isa = PBXGroup;
 			children = (
-				45D7F77720258D32005AE528 /* EventsTests.swift */,
+				451485C02039816600F971DC /* EventsInteractorTests.swift */,
+				451DA93D203A2CA300E2F9DC /* ParamsBuilderTest.swift */,
+				451485C620398E9500F971DC /* Mocks */,
 				45D7F77920258D32005AE528 /* Info.plist */,
 			);
 			path = EventsTests;
@@ -362,6 +402,8 @@
 				FA32B35A04788DE6E5F89D56 /* Pods_Events.framework */,
 				046EBAD9334C88C6A290B7A6 /* Pods_EventsTests.framework */,
 				CE9CE838E30F7ECD7AB2A16A /* Pods_EventsUITests.framework */,
+				831BE29492A8FBE3BDCA6999 /* Pods_Events_EventsTests.framework */,
+				050C10529E8F7FF8E1E4D6C1 /* Pods_Events_EventsUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -511,9 +553,28 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Events-EventsUITests/Pods-Events-EventsUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework",
+				"${BUILT_PRODUCTS_DIR}/DITranquillity/DITranquillity.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEMCheckBox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DITranquillity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -611,9 +672,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EventsTests/Pods-EventsTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/InstantMock/InstantMock.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstantMock.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -700,6 +768,7 @@
 				45142B372028EB640013B560 /* EventListModule.swift in Sources */,
 				45142B202025DE150013B560 /* RxExtensions.swift in Sources */,
 				45B728D62030D36A00563078 /* CategoryFilterPresenter.swift in Sources */,
+				451DA93C203A2A9D00E2F9DC /* ParamsBuilder.swift in Sources */,
 				45BB70D420319F0C002C67BC /* CategoryFilterModule.swift in Sources */,
 				45142B3B2028EFBE0013B560 /* EventListMvpView.swift in Sources */,
 				45BB70E3203414DB002C67BC /* EventInfoMvpView.swift in Sources */,
@@ -713,7 +782,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D7F77820258D32005AE528 /* EventsTests.swift in Sources */,
+				451DA936203993BF00E2F9DC /* PreferencesMock.swift in Sources */,
+				451DA93E203A2CA300E2F9DC /* ParamsBuilderTest.swift in Sources */,
+				451DA944203AF21200E2F9DC /* EventsCategoriesMockExtension.swift in Sources */,
+				451DA942203AE3AC00E2F9DC /* ParamsBuilderMock.swift in Sources */,
+				451DA934203992F200E2F9DC /* ApiMock.swift in Sources */,
+				451485C12039816600F971DC /* EventsInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,8 +945,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F6D8C0554DEF1CD7F2388A3 /* Pods-Events.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = "$(SRCROOT)/Events/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -888,8 +964,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2142A960BDB774783CDEAE82 /* Pods-Events.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = "$(SRCROOT)/Events/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -905,9 +983,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0647CD574D1F126E55785C4B /* Pods-EventsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = EventsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -923,9 +1002,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15A06B7CA360BABB62DC1937 /* Pods-EventsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = EventsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -941,7 +1021,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1048E914EBACFCFA06D566A7 /* Pods-EventsUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = EventsUITests/Info.plist;
@@ -958,7 +1038,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3D5BE308C5CD8A24E2763D7 /* Pods-EventsUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52674H43Y8;
 				INFOPLIST_FILE = EventsUITests/Info.plist;

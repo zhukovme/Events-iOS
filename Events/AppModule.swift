@@ -13,6 +13,8 @@ class AppModule: DIFramework {
         // Service
         container.register(Api.init)
             .lifetime(.single)
+        container.register(ParamsBuilder.init)
+            .lifetime(.single)
         // Database
         container.register(Preferences.init)
             .lifetime(.single)

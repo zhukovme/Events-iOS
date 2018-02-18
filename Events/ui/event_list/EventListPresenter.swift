@@ -28,8 +28,8 @@ class EventListPresenter: TablePresenter {
         loadEventList()
     }
 
-    func getEvent(row: Int) -> Event? {
-        return sections[0].items[row] as? Event
+    func getEvent(row: Int) -> EventItem? {
+        return sections[0].items[row] as? EventItem
     }
 
     private func loadEventList() {

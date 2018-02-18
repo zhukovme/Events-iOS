@@ -9,25 +9,29 @@
 import Foundation
 
 class Preferences {
-    private let defaults = UserDefaults.standard
+    private let defaults: UserDefaults
+
+    init() {
+        self.defaults = UserDefaults.standard
+    }
 
     var eventsCategories: EventsCategories {
         get {
-            if let data = UserDefaults.standard.value(forKey:"events_categories") as? Data {
-                return try! PropertyListDecoder().decode(EventsCategories.self, from: data)
-            }
-            return EventsCategories()
+            return getObject(forKey: "events_categories", type: EventsCategories.self) ?? EventsCategories()
         }
         set(categories) {
-            defaults.set(try? PropertyListEncoder().encode(categories), forKey: "events_categories")
+            saveObject(forKey: "events_categories", object: categories)
         }
     }
 
-    private func retrieveObject(key: String) -> Any? {
-        if let data = defaults.object(forKey: key) as? Data {
-            return NSKeyedUnarchiver.unarchiveObject(with: data)
-        } else {
-            return nil
+    private func getObject<T: Decodable>(forKey: String, type: T.Type) -> T? {
+        if let data = defaults.value(forKey: forKey) as? Data {
+            return try! PropertyListDecoder().decode(type.self, from: data)
         }
+        return nil
+    }
+
+    private func saveObject<T: Codable>(forKey: String, object: T) {
+        defaults.set(try? PropertyListEncoder().encode(object), forKey: forKey)
     }
 }

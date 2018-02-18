@@ -14,6 +14,8 @@ target 'Events' do
 
   target 'EventsTests' do
     inherit! :search_paths
+    pod 'InstantMock'
+    pod 'RxTest',     '~> 4.0'
   end
 
   target 'EventsUITests' do

@@ -22,7 +22,7 @@ class EventListCell: ListCell {
     @IBOutlet weak var labelTime: UILabel!
 
     override func configure(for viewObject: ViewObject) {
-        if let event = viewObject as? Event {
+        if let event = viewObject as? EventItem {
             labelTitle.text = event.title ?? ""
             ivImage.loadImage(url: event.imageUrl)
             ivImage.roundCorners()
